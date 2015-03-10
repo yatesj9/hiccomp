@@ -1,12 +1,12 @@
-# hiccomp
+# Hiccomp
 
-Compojure Hiccup template
+Compojure Hiccup template, very simple with basic code example using bootstrap.
 
-#about
+# About
 
 Requires Leiningen 2.0+
 
-# installation
+# Installation
 
 Download and run "lein new"
 
