@@ -17,10 +17,12 @@ lein new hiccomp <project name>
 # Usage
 
 ```clojure
+;Require repl namespace
 (require '[new-comp.repl :refer [start-server stop-server])
 
-;Port of your choosing
+;Start webserver with port of your choosing
 (start-server 3001)
- 
+
+;Stop webserver
 (stop-server)
 ```
