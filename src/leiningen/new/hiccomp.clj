@@ -16,9 +16,8 @@
 ["src/{{sanitized}}/repl.clj" (render "repl.clj" data)]
 ["test/{{sanitized}}/handler_test.clj" (render "handler_test.clj" data)]
 ["resources/public/.DS_Store" (render ".DS_Store")]
-["resources/public/css/bootstrap.css.map" (render "bootstrap.css.map")]
-["resources/public/js/bootstrap.js" (render "bootstrap.js")]
 ["resources/public/css/custom.css" (render "custom.css")]
+["resources/public/css/.DS_Store" (render ".DS_Store")]
 ["resources/.DS_Store" (render ".DS_Store")]
-["resources/public/css/bootstrap.css" (render "bootstrap.css")]
+["resources/public/js/.DS_Store" (render ".DS_Store")]
 )))
