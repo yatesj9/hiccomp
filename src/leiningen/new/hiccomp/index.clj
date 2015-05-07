@@ -5,4 +5,4 @@
 (def index
      (main
        [:h2 "Welcome to the Index"]
-       [:div "Enjoy your stay"]))
+       [:div "Enjoy your stay!"]))
