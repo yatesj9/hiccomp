@@ -1,6 +1,6 @@
 # Hiccomp
 
-Compojure Hiccup template, very simple with basic code example using bootstrap.
+Compojure Hiccup template, very simple with basic code example using bootstrap. Includes Midje for testing.
 
 # About
 
