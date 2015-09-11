@@ -16,9 +16,5 @@
 ["src/{{sanitized}}/views/index.clj" (render "index.clj" data)]
 ["src/{{sanitized}}/views/common.clj" (render "common.clj" data)]
 ["src/{{sanitized}}/repl.clj" (render "repl.clj" data)]
-["resources/public/.DS_Store" (render ".DS_Store")]
 ["resources/public/css/custom.css" (render "custom.css")]
-["resources/.DS_Store" (render ".DS_Store")]
-["resources/public/js/.DS_Store" (render ".DS_Store")]
-["resources/public/css/.DS_Store" (render ".DS_Store")]
 )))
