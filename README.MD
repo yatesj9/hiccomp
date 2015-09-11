@@ -18,10 +18,10 @@ lein new hiccomp <project name>
 
 ```clojure
 ;Require repl namespace
-(require '[new-comp.repl :refer [start-server stop-server])
+(require '[<project name>.repl :refer [start-server stop-server])
 
-;Start webserver with port of your choosing
-(start-server 3001)
+;Start webserver with specified environment config - check config.clj default port 5566
+(start-server :development)
 
 ;Stop webserver
 (stop-server)

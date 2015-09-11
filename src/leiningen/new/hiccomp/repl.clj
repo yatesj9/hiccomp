@@ -1,5 +1,7 @@
 (ns {{ns-name}}.repl
-  (:require [{{ns-name}}.handler :refer [app]])
+  (:require [{{ns-name}}.handler :refer [app]]
+            [{{ns-name}}.config :refer [set-mode!
+                                             get-settings]])
   (:use [ring.server.standalone]))
 
 (defonce server (atom nil))
@@ -9,9 +11,12 @@
   (-> #'app))
 
 (defn start-server
-  [port]
+  [mode]
   (reset! server
-    (serve (get-handler) {:port port})))
+    (do
+      (set-mode! mode)
+     (serve (get-handler) {:port (get-settings :server :port)
+                           :open-browser? false}))))
 
 (defn stop-server
   []

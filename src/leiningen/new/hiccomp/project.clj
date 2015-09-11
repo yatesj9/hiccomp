@@ -6,6 +6,7 @@
                  [compojure "1.4.0"]
                  [ring/ring-defaults "0.1.5"]
                  [ring-server "0.4.0"]
+                 [ring-middleware-format "0.6.0"]
                  [hiccup "1.0.5"]
                  [midje "1.7.0"]]
   :plugins [[lein-ring "0.8.13"]

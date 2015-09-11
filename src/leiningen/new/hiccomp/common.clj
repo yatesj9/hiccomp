@@ -3,7 +3,10 @@
 
 (def header
      [:nav {:class "navbar navbar-default navbar-fixed-top navbar-inverse"}
-      [:div {:class "container"}
+      [:div {:class "navbar-header"}
+       [:button {:type "button" :class "navbar-toggle" :data-toggle "collapse"
+                  :data-target "#bs-example-navbar-collapse-1"}
+         [:span {:class "sr-only"} "Toggle navigation"]]
        [:a {:class "navbar-brand"
             :href "/"} "Compojure"]
        [:ul {:class "nav navbar-nav"}
@@ -12,13 +15,16 @@
 
 (defn main
   [& content]
-     (html
+     (html5
+       (include-css "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+       (include-css "/css/custom.css")
        [:title "Compojure"]
        [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
-       [:div {:class "container-fluid"}
+       [:meta {:charset "utf-8"}]
+       [:meta {:name "description" :content ""}]
+       [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
+       [:div {:class "container"}
         header
         content]
-       (include-css "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
-       (include-css "/css/custom.css")
-       (include-js "//code.jquery.com/jquery-1.11.2.min.js")
-       (include-js "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")))
+       (include-js "//code.jquery.com/jquery-1.11.3.min.js")
+       (include-js "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")))
