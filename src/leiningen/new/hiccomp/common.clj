@@ -18,7 +18,7 @@
 (defn main
   [& content]
      (html5
-       (include-css "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+       (include-css "//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
        (include-css "/css/custom.css")
        [:title "Compojure"]
        [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
