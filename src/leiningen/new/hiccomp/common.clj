@@ -2,16 +2,18 @@
   (:use [hiccup core page]))
 
 (def header
-     [:nav {:class "navbar navbar-default navbar-fixed-top navbar-inverse"}
-      [:div {:class "navbar-header"}
-       [:button {:type "button" :class "navbar-toggle" :data-toggle "collapse"
-                  :data-target "#bs-example-navbar-collapse-1"}
-         [:span {:class "sr-only"} "Toggle navigation"]]
-       [:a {:class "navbar-brand"
-            :href "/"} "Compojure"]
-       [:ul {:class "nav navbar-nav"}
-        [:li [:a {:href "/"} "Home"]]
-        [:li [:a {:href "/about"} " About"]]]]])
+  [:nav {:class "navbar navbar-expand-lg navbar-dark fixed-top bg-dark"}
+   [:a {:class "navbar-brand" :href "#"}"iTwo"]
+   [:button {:class "navbar-toggler" :type "button" :data-toggle "collapse" :data-target "#navbarNav" :aria-expanded "false"
+             :aria-label "Toggle navigation"}
+    [:span {:class "navbar-toggler-icon"}]]
+   [:div {:class "collapse navbar-collapse" :id "navbarNav"}
+    [:ul {:class "navbar-nav"}
+     [:li {:class "nav-item active"}
+      [:a {:class "nav-link" :href "/"} "Home"]]
+     [:li {:class "nav-item"}
+      [:a {:class "nav-link" :href "/about"} "About"]]]]])
+
 
 (defn main
   [& content]
@@ -26,5 +28,5 @@
        [:div {:class "container"}
         header
         content]
-       (include-js "//code.jquery.com/jquery-1.11.3.min.js")
-       (include-js "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")))
+       (include-js "//code.jquery.com/jquery-3.4.1.min.js")
+       (include-js "//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")))
